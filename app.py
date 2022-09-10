@@ -17,7 +17,7 @@ deposit_type,assigned_room_type,customer_type,required_car_parking_spaces,previo
 
 def main():
     #st.markdown("## PREDICTING HOTEL BOOKING CANCELLATIONS")
-    st.sidebar.header("Predicting Hotel Cancellations Using Machine Learning")
+    st.sidebar.header("Predicting Hotel Booking Cancellations Using Machine Learning")
     st.sidebar.text("Choose the Below Parameters to Predict")
     st.sidebar.markdown("#### Lead Time")
     lead_time = st.sidebar.slider("Choose the Lead Time (Days)",0,400,step = 5)
@@ -68,17 +68,17 @@ def main():
         output = predict_cancel(lead_time,adr,total_of_special_requests,booking_changes,market_segment,
         deposit_type,assigned_room_type,customer_type,required_car_parking_spaces,previous_cancellations)
         final_output = output * 100
-        st.header('Probability of Guest Cancelling Reservation is {}% '.format(final_output))
+        st.header('Probability of Guest Booking Cancellations is {}% '.format(final_output))
 
         if final_output > 60.0:
             st.markdown(danger_html, unsafe_allow_html=True)
-            st.error("OMG! Reservation is not confirmed")
+            st.error("OMG! Booking is cancelled")
         else:
             st.balloons()
             time.sleep(2)
             st.balloons()
             st.markdown(safe_html, unsafe_allow_html=True)
-            st.success("Hurray! Reservation is confirmed")
+            st.success("Hurray! Booking is not cancelled")
 
 if __name__=='__main__':
     main()
