@@ -1,10 +1,5 @@
-numpy>=1.9.2
 scikit-learn>=0.22.1
-matplotlib>=1.4.3
-pandas>=1.4.4
-seaborn==0.10.0
-streamlit
-click>=7.0
+click==7.0
 gunicorn==19.9.0
 itsdangerous==1.1.0
 Jinja2==2.10.1
@@ -13,7 +8,6 @@ Werkzeug==0.15.5
 Cython>= 0.28.5
 seaborn==0.11.1
 matplotlib==3.3.4
-tabula_py==2.3.0
 pandas==1.2.3
 numpy==1.19.5
 streamlit==0.86.0
