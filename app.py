@@ -70,7 +70,7 @@ def main():
         final_output = output * 100
         st.header('Probability of Guest Cancelling Reservation is {}% '.format(final_output))
 
-        if final_output > 50.0:
+        if final_output > 60.0:
             st.markdown(danger_html, unsafe_allow_html=True)
             st.error("OMG! Reservation is not confirmed")
         else:
