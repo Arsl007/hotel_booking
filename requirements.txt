@@ -11,3 +11,11 @@ Jinja2==2.10.1
 MarkupSafe==1.1.1
 Werkzeug==0.15.5
 Cython>= 0.28.5
+seaborn==0.11.1
+matplotlib==3.3.4
+tabula_py==2.3.0
+pandas==1.2.3
+numpy==1.19.5
+streamlit==0.86.0
+camelot-py[base]
+Pillow==8.3.2
